@@ -1,0 +1,24 @@
+header.main-header.clearfix
+	a(href="/").main-header__logo
+		img(src="img/logo.svg")
+	.main-header__center
+		.main-header__callback
+			a(href="tel:+78002004780").num 8 800 200 47 80
+			a(href="#popupCallback").fancybox.callback__link обратный звонок
+		button.responsive-menu
+				span
+				span
+				span
+		.main-header__menu#mainMenu
+			ul
+				li: a(href="#") Главная
+				li: a(href="#") О сервисе
+				li: a(href="#") Тарифы
+				li: a(href="#") Вопрос-ответ
+				li: a(href="#") Новости
+				li: a(href="#") Контакты
+	.main-header__auth
+		a(href="#popupLogin").fancybox.signin
+			i.icon.icon-person
+			span Вход
+

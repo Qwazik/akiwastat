@@ -1,0 +1,51 @@
+extends template
+
+block main
+	.breadcumbs
+		.container
+			ul.breadcumbs__list
+				li.breadcumbs__item: a.breadcumbs__link(href="#") Главная
+				li.breadcumbs__item: a.breadcumbs__link(href="#") Блог
+				li.breadcumbs__item: a.breadcumbs__link(href="#") Технологии распознавания речи: научный эксперимент или реальная прибыль для бизнеса?
+	.inner-header
+		.container
+			.row
+				.col-md-7.fl-left
+					h2 О сервисе
+				.col-md-5.fl-right
+					include includes/smallslider
+	.inner-service
+		.inner-service__top
+			.container
+				.row
+					.col-md-7
+						.inner-service__top--left
+							img(src="img/service-icon.png", alt="")
+							p <b>Система Call tracking (Колтрекинг)</b> – это Ваш мощный инструмент учета конверсий (лидов), поступающих с разных источников – контекстной рекламы, поисковых систем и любых видов оффлайн-рекламы
+					.col-md-5
+						.mark
+							i.icon.icon-info 
+							a(href="#") Зачем Call Traking моей компании?
+		.inner-service__calltracking.bottom-space
+			.container
+				.calltracking-inner.clearfix
+					.calltracking-inner__item.fl-left.calltracking-inner__item--static
+						i.icon.icon-calltracking-static
+						.calltracking-inner__name Статический Call Traking
+						.calltracking-inner__desc
+							p Закрепляйте за каждым рекламным источником свой номер, принимайте все звонки на один телефон, анализируйте статистику и определяйте, какой рекламный канал наиболее эффективен.
+							p Необходимое количество телефонных номеров равно количеству рекламных каналов.
+					.calltracking-inner__item.fl-right.calltracking-inner__item--dinamic
+						i.icon.icon-calltracking-dinamic
+						.calltracking-inner__name Динамический Call Traking
+						.calltracking-inner__desc
+							p Отслеживайте рекламный источник с точностью до поисковой фразы. Анализируйте контекстную рекламу до реального запроса пользователя. Убедитесь сами, как легко теперь оценить эффективность каждой рекламной площадки.
+							p Подменяйте и показывайте определенный номер каждому из уникальных посетителей Вашего сайта! Так, количество необходимых номеров равно среднему количеству посетителей, которые одновременно пребывают на сайте.
+		.inner-service__bottom.bottom-space
+				i.icon.icon-logo
+				p Новый сервис аналитики Akiwastat поможет Вам определить рекламные источники звонков и заявок и определить эффективность каждого из имеющихся в компании маркетинговых каналов.
+				.button 
+					i.icon.icon-plus-person 
+					span Зарегистрироваться сейчас
+
+

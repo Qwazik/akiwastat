@@ -1,0 +1,36 @@
+extends template
+
+block main
+	.breadcumbs
+		.container
+			ul.breadcumbs__list
+				li.breadcumbs__item: a.breadcumbs__link(href="#") Главная
+				li.breadcumbs__item: a.breadcumbs__link(href="#") Блог
+				li.breadcumbs__item: a.breadcumbs__link(href="#") Технологии распознавания речи: научный эксперимент или реальная прибыль для бизнеса?
+	.inner-header
+		.container
+			.row
+				.col-md-7.fl-left
+					h2 Контакты
+				.col-md-5.fl-right
+					include includes/smallslider
+	.inner-contacts.bottom-space
+		.container
+			.inner-contacts__info.clearfix
+				
+					.col-md-4
+						.inner-contacts__item.addr
+							i.icon.icon-map
+							span Москва, ул. Угрешская 2, стр. 51
+					.col-md-4
+						.inner-contacts__item.phone
+							i.icon.icon-phone-green
+							span 8 (499) 928 98 88
+					.col-md-4
+						.inner-contacts__item
+							i.icon.icon-mail
+							a(href="#") info@akiwastat.ru
+	.inner-contacts__map.bottom-space
+		.container
+			#map
+

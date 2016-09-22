@@ -1,0 +1,56 @@
+extends template
+
+block main
+	.breadcumbs
+		.container
+			ul.breadcumbs__list
+				li.breadcumbs__item: a.breadcumbs__link(href="#") Главная
+				li.breadcumbs__item: a.breadcumbs__link(href="#") Блог
+				li.breadcumbs__item: a.breadcumbs__link(href="#") Технологии распознавания речи: научный эксперимент или реальная прибыль для бизнеса? 
+	.page__article.bottom-space
+		.container
+			.article
+				.article__image
+					img(src="img/article-image.jpg", alt="")
+					.article__container
+						.article-details
+							.article-details--type.article-details__item Статья
+							.article-details--new.article-details__item Новинка
+						h2.article__header Технологии распознавания речи: научный эксперимент или реальная прибыль для бизнеса?
+				.article__body
+					.article__container
+						p На рынке коллтрекинга зреет революция: мы стоим на пороге внедрения технологии распознавания речи. Недавно она нашла применение в американских сервисах. О том, как скоро тренд придет в Россию, какую выгоду получат владельцы бизнесов, рассмотрим в статье.
+						p.title История вопроса
+						p Сначала разберемся, что такое распознавание речи. В научной среде так называют процесс преобразования речевого сигнала в цифровую информацию (например, текстовые данные). Антиподом технологии служат <a href="#">говорящие роботы</a>, преобразующие цифровую информацию в речевой сигнал.
+						p Первое устройство распознавания речи появилось в 1952 году, оно понимало произнесенные человеком цифры. В начале 1990 годов были выпущены программы, позволяющие работать с текстом людям с ограниченными возможностями. Но повсеместного распространения технология не получила, потому что распознавание было неточным из-за нескольких проблем:
+						.article__note В России наибольших успехов добился пока только Яндекс: в 2013 году компания запустила облачную технологию SpeechKitCloud, которая помогает синтезировать и распознавать речь.
+						p Синтез происходит за счет статистического подхода в акустическом моделировании. Проще говоря, программа формирует новый голос, основываясь на интонациях живых людей. Это позволяет придать искусственной речи эмоциональную окраску (добрая, злая, нейтральная) или наделить половыми признаками (мужчина, женщина). На момент написания статьи сервис предлагал бесплатное тестирование в течение месяца, дальнейшая ориентировочная стоимость составляет 5$ за 1000 запросов.
+	.page__subscribe.bottom-space
+		.container
+			.subscribe
+				form(action="#")
+					.row
+						.subscribe__item.subscribe__text Подписаться на новости, акции и обновления
+						.subscribe__input-elements
+							.subscribe__item: input(type="text" placeholder="Введите свой email").subscribe__input
+							.subscribe__item: button(type="submit").subscribe__submit.button Подписаться
+	.page__theme-posts.bottom-space.blog__theme-posts
+		.container
+			.theme-posts.clearfix
+				h2 Статьи по теме
+				.theme-posts__post.fl-left.bottom-space
+					.theme-posts__image
+						img(src="img/theme-posts__image.jpg", alt="")
+					.theme-posts__right
+						.theme-posts__name Новые возможности: стоимость звонка, сквозная аналитика, ROI
+						.theme-posts__details
+							.mark Call Tracking
+						.theme-posts__desc В этом посте вы узнаете о 3 обновлениях, которые облегчат работу по отслеживанию рекламы.
+				.special.fl-right
+					.mark Спецпредложение
+					.special__name Call Tracking: Месяц бесплатно
+					.button.yellow-button Узнать больше
+
+
+
+

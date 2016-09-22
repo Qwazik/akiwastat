@@ -1,0 +1,59 @@
+extends template
+
+block main
+	.breadcumbs
+		.container
+			ul.breadcumbs__list
+				li.breadcumbs__item: a.breadcumbs__link(href="#") Главная
+				li.breadcumbs__item: a.breadcumbs__link(href="#") Блог
+				li.breadcumbs__item: a.breadcumbs__link(href="#") Технологии распознавания речи: научный эксперимент или реальная прибыль для бизнеса?
+	.inner-header
+		.container
+			.row
+				.col-md-7.fl-left
+					h2 Блог
+				.col-md-5.fl-right
+					include includes/smallslider
+	.page__theme-posts.bottom-space.blog-main__theme-posts
+		.container
+			.theme-posts.clearfix
+				.theme-posts__post.bottom-space.top.theme-posts__post--top
+					.theme-posts__image
+						img(src="img/theme-posts__image.jpg", alt="")
+					.theme-posts__right
+						.theme-posts__name Новые возможности: стоимость звонка, сквозная аналитика, ROI
+						.theme-posts__details
+							.mark Call Tracking
+						.theme-posts__desc В этом посте вы узнаете о 3 обновлениях, которые облегчат работу по отслеживанию рекламы.
+						a.read-more(href="#") Читать далее
+				.theme-posts__post.bottom-space
+					.theme-posts__image
+						img(src="img/theme-posts__image.jpg", alt="")
+					.theme-posts__right
+						.theme-posts__name Новые возможности: стоимость звонка, сквозная аналитика, ROI
+						.theme-posts__details
+							.mark Call Tracking
+						.theme-posts__desc В этом посте вы узнаете о 3 обновлениях, которые облегчат работу по отслеживанию рекламы.
+				.special
+					.mark Спецпредложение
+					.special__name Call Tracking: Месяц бесплатно
+					.button.yellow-button Узнать больше
+				.theme-posts__post.bottom-space
+					.theme-posts__right
+						.theme-posts__name Новые возможности: стоимость звонка, сквозная аналитика, ROI
+						.theme-posts__details
+							.mark Call Tracking
+						.theme-posts__desc В этом посте вы узнаете о 3 обновлениях, которые облегчат работу по отслеживанию рекламы.
+				.theme-posts__post.bottom-space
+					.theme-posts__image
+						img(src="img/theme-posts__image.jpg", alt="")
+					.theme-posts__right
+						.theme-posts__name Новые возможности: стоимость звонка, сквозная аналитика, ROI
+						.theme-posts__details
+							.mark Call Tracking
+						.theme-posts__desc В этом посте вы узнаете о 3 обновлениях, которые облегчат работу по отслеживанию рекламы.
+		.container
+			include includes/pagination
+	.page__subscribe.bottom-space
+		.container
+			include includes/subscribe

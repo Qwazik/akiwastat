@@ -1,0 +1,198 @@
+// -------------- footer --------------
+footer.page__footer
+	.container
+		.main-footer.row
+			.col-lg-3.col-md-4.main-footer__column
+				a(href="/").main-footer__logo
+					img(src="img/logo-light.svg")
+				.main-footer__copyright Copyrights © 2016 AKIWASTAT Все права защищены.
+				a(href="#").main-footer__link Условия пользования
+				a(href="#").main-footer__link Публичная оферта
+			.col-lg-7.col-md-8.footer-contacts__wrap.main-footer__column.clearfix
+				.main-footer__contacts.footer-contacts
+					.footer-contacts__item
+						.icon.icon-map
+						.footer-contacts__name Адрес
+						.footer-contacts__text Москва, ул. Покровка д. 21-23/25 стр. 1, помещение 8
+					.social
+						.social__item.icon.icon-fb
+						.social__item.icon.icon-vk
+						.social__item.icon.icon-tw
+				.main-footer__contacts.footer-contacts
+					.footer-contacts__item
+						.icon.icon-mail
+						.footer-contacts__name Email:
+						a(href="#").footer-contacts__link info@akiwastat.ru
+					.footer-contacts__item
+						.icon.icon-phone-green
+						.footer-contacts__name Телефон:
+						.footer-contacts__text 8-800-200-47-80
+			.col-lg-2.col-md-12.main-footer__column.main-footer__button
+				.button.yellow-button Заказать консультацию
+// -------------- footer end --------------
+// -------------- popup --------------
+// -------------- Форма заявки на подключение --------------
+.popup#popupToConnect
+	form(action="").popup__form
+		.row
+			.col-md-12
+				p.popup__header Заявка на подключение
+		.row
+			.col-md-6
+				span.input.input--madoka
+					input.input__field.input__field--madoka#popup-connect-name
+					label.input__label.input__label--madoka(for="popup-connect-name")
+						svg(class="graphic graphic--madoka" width="100%" height="100%" viewBox="0 0 404 77" preserveAspectRatio="none")
+							path(d="m0,0l404,0l0,77l-404,0l0,-77z")
+						span(class="input__label-content input__label-content--madoka") Ваше имя
+				span.input.input--madoka
+					input.input__field.input__field--madoka#popup-connect-mail
+					label.input__label.input__label--madoka(for="popup-connect-mail")
+						svg(class="graphic graphic--madoka" width="100%" height="100%" viewBox="0 0 404 77" preserveAspectRatio="none")
+							path(d="m0,0l404,0l0,77l-404,0l0,-77z")
+						span(class="input__label-content input__label-content--madoka") Email
+						
+			.col-md-6
+				span.input.input--madoka
+						input.input__field.input__field--madoka#popup-connect-phone
+						label.input__label.input__label--madoka(for="popup-connect-phone")
+							svg(class="graphic graphic--madoka" width="100%" height="100%" viewBox="0 0 404 77" preserveAspectRatio="none")
+								path(d="m0,0l404,0l0,77l-404,0l0,-77z")
+							span(class="input__label-content input__label-content--madoka") Телефон
+				span.input.input--madoka
+					input.input__field.input__field--madoka#popup-connect-site
+					label.input__label.input__label--madoka(for="popup-connect-site")
+						svg(class="graphic graphic--madoka" width="100%" height="100%" viewBox="0 0 404 77" preserveAspectRatio="none")
+							path(d="m0,0l404,0l0,77l-404,0l0,-77z")
+						span(class="input__label-content input__label-content--madoka") Ваш сайт
+		.row
+			.col-md-12
+				textarea(name="comment" placeholder="Комментарий").popup__textarea
+		.row
+			.col-md-6
+				.popup__time
+					input(type="text" name="time" placeholder="Когда с вами связаться?").time-mask
+					i.icon.icon-time
+			.col-md-6
+				input(type="submit", value="Отправить заявку").button.popup__submit.fl-right
+// -------------- Форма обратного звонка --------------
+.popup#popupCallback
+	form(action="").popup__form
+		.row
+			.col-md-12
+				p.popup__header Обратный звонок
+		.row
+			.col-md-6
+				span.input.input--madoka
+					input.input__field.input__field--madoka#popup-callback-name
+					label.input__label.input__label--madoka(for="popup-callback-name")
+						svg(class="graphic graphic--madoka" width="100%" height="100%" viewBox="0 0 404 77" preserveAspectRatio="none")
+							path(d="m0,0l404,0l0,77l-404,0l0,-77z")
+						span(class="input__label-content input__label-content--madoka") Ваше имя
+						
+			.col-md-6
+				span.input.input--madoka
+						input.input__field.input__field--madoka#popup-callback-phone.phone-mask
+						label.input__label.input__label--madoka(for="popup-callback-phone")
+							svg(class="graphic graphic--madoka" width="100%" height="100%" viewBox="0 0 404 77" preserveAspectRatio="none")
+								path(d="m0,0l404,0l0,77l-404,0l0,-77z")
+							span(class="input__label-content input__label-content--madoka") Телефон
+		.row
+			.col-md-6
+				.popup__time
+					input(type="text" name="time" placeholder="Когда с вами связаться?").time-mask
+					i.icon.icon-time
+			.col-md-6
+				input(type="submit", value="Отправить заявку").button.popup__submit.fl-right
+// -------------- Форма регистрации --------------
+.popup#popupRegister
+	form(action="").popup__form
+		.row
+			.col-md-12
+				p.popup__header Регистрация
+		.row
+			.col-md-6
+				span.input.input--madoka
+					input.input__field.input__field--madoka#popup-register-name
+					label.input__label.input__label--madoka(for="popup-register-name")
+						svg(class="graphic graphic--madoka" width="100%" height="100%" viewBox="0 0 404 77" preserveAspectRatio="none")
+							path(d="m0,0l404,0l0,77l-404,0l0,-77z")
+						span(class="input__label-content input__label-content--madoka") Ваше имя
+				span.input.input--madoka
+					input.input__field.input__field--madoka#popup-register-mail
+					label.input__label.input__label--madoka(for="popup-register-mail")
+						svg(class="graphic graphic--madoka" width="100%" height="100%" viewBox="0 0 404 77" preserveAspectRatio="none")
+							path(d="m0,0l404,0l0,77l-404,0l0,-77z")
+						span(class="input__label-content input__label-content--madoka") Email
+						
+			.col-md-6
+				span.input.input--madoka
+						input.input__field.input__field--madoka#popup-register-login
+						label.input__label.input__label--madoka(for="popup-register-login")
+							svg(class="graphic graphic--madoka" width="100%" height="100%" viewBox="0 0 404 77" preserveAspectRatio="none")
+								path(d="m0,0l404,0l0,77l-404,0l0,-77z")
+							span(class="input__label-content input__label-content--madoka") Логин
+				span.input.input--madoka
+					input.input__field.input__field--madoka#popup-register-phone
+					label.input__label.input__label--madoka(for="popup-register-phone")
+						svg(class="graphic graphic--madoka" width="100%" height="100%" viewBox="0 0 404 77" preserveAspectRatio="none")
+							path(d="m0,0l404,0l0,77l-404,0l0,-77z")
+						span(class="input__label-content input__label-content--madoka") Телефон
+		.row
+			.col-md-6
+				span.input.input--madoka
+					input.input__field.input__field--madoka#popup-register-pas(type="password")
+					label.input__label.input__label--madoka(for="popup-register-pas")
+						svg(class="graphic graphic--madoka" width="100%" height="100%" viewBox="0 0 404 77" preserveAspectRatio="none")
+							path(d="m0,0l404,0l0,77l-404,0l0,-77z")
+						span(class="input__label-content input__label-content--madoka") Пароль
+			.col-md-6
+				span.input.input--madoka
+						input.input__field.input__field--madoka#popup-register-pas2(type="password")
+						label.input__label.input__label--madoka(for="popup-register-pas2")
+							svg(class="graphic graphic--madoka" width="100%" height="100%" viewBox="0 0 404 77" preserveAspectRatio="none")
+								path(d="m0,0l404,0l0,77l-404,0l0,-77z")
+							span(class="input__label-content input__label-content--madoka") Повторите пароль
+		.row
+			.col-md-6
+				span.input.input--madoka
+					input.input__field.input__field--madoka#popup-register-promo
+					label.input__label.input__label--madoka(for="popup-register-promo")
+						svg(class="graphic graphic--madoka" width="100%" height="100%" viewBox="0 0 404 77" preserveAspectRatio="none")
+							path(d="m0,0l404,0l0,77l-404,0l0,-77z")
+						span(class="input__label-content input__label-content--madoka") Промокод
+			
+			.col-md-6
+				input(type="submit", value="Отправить заявку").button.popup__submit.fl-right
+// -------------- Форма входа --------------
+.popup#popupLogin
+	form(action="").popup__form
+		.row
+			.col-md-12
+				p.popup__header Вход
+		.row
+			.col-md-6
+				span.input.input--madoka
+						input.input__field.input__field--madoka#popup-login-login
+						label.input__label.input__label--madoka(for="popup-login-login")
+							svg(class="graphic graphic--madoka" width="100%" height="100%" viewBox="0 0 404 77" preserveAspectRatio="none")
+								path(d="m0,0l404,0l0,77l-404,0l0,-77z")
+							span(class="input__label-content input__label-content--madoka") Логин
+			.col-md-6
+				span.input.input--madoka
+					input.input__field.input__field--madoka#popup-login-pas(type="password")
+					label.input__label.input__label--madoka(for="popup-login-pas")
+						svg(class="graphic graphic--madoka" width="100%" height="100%" viewBox="0 0 404 77" preserveAspectRatio="none")
+							path(d="m0,0l404,0l0,77l-404,0l0,-77z")
+						span(class="input__label-content input__label-content--madoka") Пароль
+		.row
+			.col-md-6
+				span.input.input--madoka
+						input.input__field.input__field--madoka#popup-login-pas2
+						label.input__label.input__label--madoka(for="popup-login-pas2")
+							svg(class="graphic graphic--madoka" width="100%" height="100%" viewBox="0 0 404 77" preserveAspectRatio="none")
+								path(d="m0,0l404,0l0,77l-404,0l0,-77z")
+							span(class="input__label-content input__label-content--madoka") Повторите пароль
+			.col-md-6
+				input(type="submit", value="Отправить заявку").button.popup__submit.fl-right
+// -------------- popup end --------------

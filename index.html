@@ -1,0 +1,451 @@
+<!DOCTYPE html><!--[if lt IE 7]>      
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ru">
+<![endif]-->
+<!--[if IE 7]>         
+<html class="no-js lt-ie9 lt-ie8" lang="ru">
+<![endif]-->
+<!--[if IE 8]>         
+<html class="no-js lt-ie9" lang="ru">
+<![endif]-->
+<html lang="ru" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Start</title>
+    <meta name="description" content="">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- LIBS STYLES ======================================================================-->
+    <link rel="stylesheet" href="libs/owl/owl.carousel.css">
+    <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css">
+    <link rel="stylesheet" href="libs/ui-slider/jquery-ui.min.css">
+    <!-- CUSTOM STYLES ====================================================================-->
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="libs/modernizr.js"></script>
+  </head>
+  <body><!--[if lt IE 9]>
+    <script src="libs/respond.min.js"></script>
+    <script src="libs/selectivizr-min.js"></script><![endif]-->
+    <!--[if lt IE 8]>
+    <p class="browserupgrade">Ваш браузер  <strong>устарел</strong>. Пожалуйста <a href="http://browsehappy.com/">обновите ваш браузер</a> для корректного отображения сайтов.</p><![endif]-->
+    <div class="page">
+      <header class="main-header clearfix"><a href="/" class="main-header__logo"><img src="img/logo.svg"></a>
+        <div class="main-header__center">
+          <div class="main-header__callback"><a href="tel:+78002004780" class="num">8 800 200 47 80</a><a href="#popupCallback" class="fancybox callback__link">обратный звонок</a></div>
+          <button class="responsive-menu"><span></span><span></span><span></span></button>
+          <div id="mainMenu" class="main-header__menu">
+            <ul>
+              <li><a href="#">Главная</a></li>
+              <li><a href="#">О сервисе</a></li>
+              <li><a href="#">Тарифы</a></li>
+              <li><a href="#">Вопрос-ответ</a></li>
+              <li><a href="#">Новости</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="main-header__auth"><a href="#popupLogin" class="fancybox signin"><i class="icon icon-person"></i><span>Вход</span></a></div>
+      </header>
+      <!-- -------------- слайдер ---------------->
+      <div class="page__slider slider">
+        <div class="slider__content-wrap container">
+          <div class="slider__content slider-content animated fadeIn">
+            <div id="carousel-custom-dots" class="vertical"></div><strong class="slider-content__header">Веб-аналитика от AkiwaStat</strong>
+            <p class="slider-content__desc">Только в августе для клиентов из Москвы и Санкт-Петербурга мы предлагаем Call Traking по супер цене!</p>
+            <div class="slider-content__price-block"><i class="icon icon-price-left"> </i><span class="slider-content__price">
+                 
+                &nbsp;4500 <img style="vertical-align: 0px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAABJCAYAAACkYd+RAAADZElEQVRoQ+2aX4hVVRSHvx+WSGIkWQOiUyRkCGEPkUwQgZgh+VKBFvhgRAg+KWgRiJChD81TESXiQxH4NMxDiIU4FCiiSCijgqRBDowoJdM0ak1Os2LBuXDYnjuz91y9d4dnwX04+6yzz7d/e+1/61wRmJl1A5fD8hau/wTGgJ+B88AP/pM0klqn2gBbxTQOfAt8JulYLHSnYMt8A8BWSWeng84B1hlvA3uAjyX92ww6F9gG32FgvaQ/qoBjYYckPTFdN1XdN7PZwELgWWAlsK64blbdaeBVSb+FDvcctmIAzwJeBz4CljUhPukNk3SrfL/tsI2Xm9mDwIfATsAbEFq/pDezgC1BrwL6gXkVwJslfdko75iyZTAz6wGOAA8FwDeAZyQNe3kWsA5iZm8AfRVMX0vamBVsAbwX2BSoOwEskTSUjbIF7HzgIvBoANwr6f2sYAvgHb6SBbAes905wj4GOJxPbWXryQ62UPcQsCaA/SBX2G1AbwDblyvsy8CPAexgrrCLgaEA9vdcYR8GRgPY8Vxh5wK+1JZtIlfYx4FrAexIrrC+sTkewF7IFfY9YF8AezBX2APA2wHs7uxgzWxOEa8+I5RtdY6w7wL7A1DP6nRlBVucy84BTwewX0l6JzfY7cAnAahfviDpVDawZrYcOAF4zJZtQJIfKvM4g5mZJ0E8V7AoAPVU0vOSzmQBW6RYPW20tKL7P5W0pVHe0TAwM+9en1P9dBDaILBC0t8dhTWzJ4FdwIaqUAQ8z/WipEvlFrRNWTNbUCTm3gLWVpyxGlyeEX9F0k+h1LGw3hXRGerSSx4o0kI+cLoqujos8g33a5J8rr3DYmEj3tOyy/ceFpKuN6spB1iPTz8gfiPJpmpyJ2G9yz8HvpB0M6Zf2gn7V/FpyU+t3/npVdJkDGTq1HW1GMEpdTd8/wH8G8FwKtxMZ4MZf1OYSetaHWA1bKrqsQOsVjZZWTN7KnjI95ZHg7IrwEuplQf+k5J+baUOmdmUq0YrlQfPjkp6pJX6atgm6t1/yv4SKOF7UP/rSdn8W1SY3E0NvzFJz6U+VPav59lW1Lsb+9l6BUvtgTpmUxWL9a+VjVUq1a9WNlWxWP9a2VilUv1qZVMVi/WvlY1VKtWvVjZVsVj/WtlYpVL9/lfK/gfOhiaRoxu1HQAAAABJRU5ErkJggg==" alt=""></span><span class="slider-content__price-period">в месяц</span></div>
+            <div class="slider-content__footer"><a href="#popupRegister" class="fancybox slider-content__button button"> <i class="icon icon-plus-person"></i><span>Зарегистрироваться сейчас</span></a>
+              <div class="slider-content__promo">* При регистрации укажите промо код: <b class="white">093241</b></div>
+            </div>
+          </div>
+        </div>
+        <div id="jsMainSlider" class="slider__list">
+          <div style="background-image: url('img/slide1.jpg');" alt="" class="slider__item slider__image"></div>
+          <div style="background-image: url('img/slide1.jpg');" alt="" class="slider__item slider__image"></div>
+          <div style="background-image: url('img/slide1.jpg');" alt="" class="slider__item slider__image"></div>
+        </div>
+      </div>
+      <!-- -------------- слайдер конец ---------------->
+      <!-- -------------- calltracking ---------------->
+      <div class="page__calltracking">
+        <div class="container">
+          <div class="calltracking color-white">
+            <div class="calltracking__main"> <span class="tooltip-wrap green-text">Динамический
+                <div class="tooltip">
+                  <p>Отслеживайте рекламный источник с точностью до поисковой фразы. Анализируйте контекстную рекламу до реального запроса пользователя. Убедитесь сами, как легко теперь оценить эффективность каждой рекламной площадки.</p>
+                  <p>Подменяйте и показывайте определенный номер каждому из уникальных посетителей Вашего сайта! Так, количество необходимых номеров равно среднему количеству посетителей, которые одновременно пребывают на сайте.</p>
+                </div></span>и <span class="tooltip-wrap green-text">статический
+                <div class="tooltip">
+                  <p>Отслеживайте рекламный источник с точностью до поисковой фразы. Анализируйте контекстную рекламу до реального запроса пользователя. Убедитесь сами, как легко теперь оценить эффективность каждой рекламной площадки.</p>
+                  <p>Подменяйте и показывайте определенный номер каждому из уникальных посетителей Вашего сайта! Так, количество необходимых номеров равно среднему количеству посетителей, которые одновременно пребывают на сайте.</p>
+                </div></span>Call Tracking <span class="block">в более чем 90 регионах РФ</span></div>
+            <div class="calltracking__desc">
+               
+              Система Call tracking (Колтрекинг) – это Ваш мощный инструмент учета конверсий (лидов), поступающих с разных источников – контекстной рекламы, поисковых систем и любых видов оффлайн-рекламы.<a href="#" class="button yellow-button">Подробнее о CALL TRACKIING</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- -------------- calltracking end ---------------->
+      <!-- -------------- steps ---------------->
+      <div class="page__steps">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5 col-md-3"></div>
+            <div class="col-lg-7 col-md-9">
+              <h2>Сервис AkiwaStat<span>очень просто использовать</span></h2>
+              <div class="steps">
+                <div class="steps__body">
+                  <div class="steps__item active">
+                    <div class="steps__num">1</div><a href="#" class="steps__link">Регистрация</a>
+                  </div>
+                  <div class="steps__item">
+                    <div class="steps__num">2</div><a href="#" class="steps__link">Добавление сайта в систему</a>
+                  </div>
+                  <div class="steps__item"> 
+                    <div class="steps__num">3</div><a href="#" class="steps__link">Установка кода на сайт</a>
+                  </div>
+                </div>
+                <div class="steps__footer"><i class="icon icon-galka"></i><span>1 код = 3 сервиса</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- -------------- steps end ---------------->
+      <!-- -------------- features ---------------->
+      <div class="page__features">
+        <div class="container">
+          <h2>Приемущества</h2><span class="desc">Мы продолжаем неустанно работать над разработкой и усовершенствованием сервисов для того, чтобы вы могли оценить наши старания.</span>
+          <div class="row">
+            <div class="col-lg-4 col-md-5 col-sm-6 features__left-side">
+              <div class="features__item clearfix">
+                <div class="features__left">
+                  <div class="features__name">Пробный период и демо-доступ к сервисам</div>
+                  <div class="features__desc">Пробный период к Call back, генератору лидов. Демо-доступ к Call tracking</div>
+                </div>
+                <div class="features__image"><i class="icon icon-features1"></i></div>
+              </div>
+              <div class="features__item clearfix">
+                <div class="features__left">
+                  <div class="features__name">Интеграция со сторонними сервисами</div>
+                  <div class="features__desc">СRM-системы, аmoСRM, Bitrix24, платформа K50</div>
+                </div>
+                <div class="features__image"><i class="icon icon-features2"></i></div>
+              </div>
+              <div class="features__item clearfix">
+                <div class="features__left">
+                  <div class="features__name">Понятное ценообразование и прозрачная стоимость</div>
+                  <div class="features__desc">Цена в зависимости от региона работы и от количества посетителей в день</div>
+                </div>
+                <div class="features__image"><i class="icon icon-features3"></i></div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-2"></div>
+            <div class="col-lg-4 col-md-5 col-sm-6 features__right-side">
+              <div class="features__item clearfix">
+                <div class="features__image"><i class="icon icon-features4"></i></div>
+                <div class="features__left">
+                  <div class="features__name">Пробный период и демо-доступ к сервисам</div>
+                  <div class="features__desc">Пробный период к Call back, генератору лидов. Демо-доступ к Call tracking</div>
+                </div>
+              </div>
+              <div class="features__item clearfix">
+                <div class="features__image"><i class="icon icon-features5"></i></div>
+                <div class="features__left">
+                  <div class="features__name">Интеграция со сторонними сервисами</div>
+                  <div class="features__desc">СRM-системы, аmoСRM, Bitrix24, платформа K50</div>
+                </div>
+              </div>
+              <div class="features__item clearfix">
+                <div class="features__image"><i class="icon icon-features6"></i></div>
+                <div class="features__left">
+                  <div class="features__name">Понятное ценообразование и прозрачная стоимость</div>
+                  <div class="features__desc">Цена в зависимости от региона работы и от количества посетителей в день</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- -------------- features end ---------------->
+      <!-- -------------- clients ---------------->
+      <div class="page__clients">
+        <div class="container">
+          <h2>Клиенты</h2>
+          <div class="clients">
+            <div class="row">
+              <div class="col-lg-3 col-md-4 col-sm-6 clients__item-wrap">
+                <div class="clients__item"><img src="img/clients1.png" alt=""></div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 clients__item-wrap">
+                <div class="clients__item"><img src="img/clients2.png" alt=""></div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 clients__item-wrap">
+                <div class="clients__item"><img src="img/clients3.png" alt=""></div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 clients__item-wrap">
+                <div class="clients__item"><img src="img/clients4.png" alt=""></div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 clients__item-wrap">
+                <div class="clients__item"><img src="img/clients5.png" alt=""></div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 clients__item-wrap">
+                <div class="clients__item"><img src="img/clients6.png" alt=""></div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 clients__item-wrap">
+                <div class="clients__item"><img src="img/clients7.png" alt=""></div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 clients__item-wrap">
+                <div class="clients__item"><img src="img/clients8.png" alt=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- -------------- clients end ---------------->
+      <!-- -------------- footer ---------------->
+      <footer class="page__footer">
+        <div class="container">
+          <div class="main-footer row">
+            <div class="col-lg-3 col-md-4 main-footer__column"><a href="/" class="main-footer__logo"><img src="img/logo-light.svg"></a>
+              <div class="main-footer__copyright">Copyrights © 2016 AKIWASTAT Все права защищены.</div><a href="#" class="main-footer__link">Условия пользования</a><a href="#" class="main-footer__link">Публичная оферта</a>
+            </div>
+            <div class="col-lg-7 col-md-8 footer-contacts__wrap main-footer__column clearfix">
+              <div class="main-footer__contacts footer-contacts">
+                <div class="footer-contacts__item">
+                  <div class="icon icon-map"></div>
+                  <div class="footer-contacts__name">Адрес</div>
+                  <div class="footer-contacts__text">Москва, ул. Покровка д. 21-23/25 стр. 1, помещение 8</div>
+                </div>
+                <div class="social">
+                  <div class="social__item icon icon-fb"></div>
+                  <div class="social__item icon icon-vk"></div>
+                  <div class="social__item icon icon-tw"></div>
+                </div>
+              </div>
+              <div class="main-footer__contacts footer-contacts">
+                <div class="footer-contacts__item">
+                  <div class="icon icon-mail"></div>
+                  <div class="footer-contacts__name">Email:</div><a href="#" class="footer-contacts__link">info@akiwastat.ru</a>
+                </div>
+                <div class="footer-contacts__item">
+                  <div class="icon icon-phone-green"></div>
+                  <div class="footer-contacts__name">Телефон:</div>
+                  <div class="footer-contacts__text">8-800-200-47-80</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-12 main-footer__column main-footer__button">
+              <div class="button yellow-button">Заказать консультацию</div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- -------------- footer end ---------------->
+      <!-- -------------- popup ---------------->
+      <!-- -------------- Форма заявки на подключение ---------------->
+      <div id="popupToConnect" class="popup">
+        <form action="" class="popup__form">
+          <div class="row">
+            <div class="col-md-12">
+              <p class="popup__header">Заявка на подключение</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6"><span class="input input--madoka">
+                <input id="popup-connect-name" class="input__field input__field--madoka">
+                <label for="popup-connect-name" class="input__label input__label--madoka">
+                  <svg width="100%" height="100%" viewBox="0 0 404 77" preserveAspectRatio="none" class="graphic graphic--madoka">
+                    <path d="m0,0l404,0l0,77l-404,0l0,-77z"></path>
+                  </svg><span class="input__label-content input__label-content--madoka">Ваше имя</span>
+                </label></span><span class="input input--madoka">
+                <input id="popup-connect-mail" class="input__field input__field--madoka">
+                <label for="popup-connect-mail" class="input__label input__label--madoka">
+                  <svg width="100%" height="100%" viewBox="0 0 404 77" preserveAspectRatio="none" class="graphic graphic--madoka">
+                    <path d="m0,0l404,0l0,77l-404,0l0,-77z"></path>
+                  </svg><span class="input__label-content input__label-content--madoka">Email</span>
+                </label></span></div>
+            <div class="col-md-6"><span class="input input--madoka">
+                <input id="popup-connect-phone" class="input__field input__field--madoka">
+                <label for="popup-connect-phone" class="input__label input__label--madoka">
+                  <svg width="100%" height="100%" viewBox="0 0 404 77" preserveAspectRatio="none" class="graphic graphic--madoka">
+                    <path d="m0,0l404,0l0,77l-404,0l0,-77z"></path>
+                  </svg><span class="input__label-content input__label-content--madoka">Телефон</span>
+                </label></span><span class="input input--madoka">
+                <input id="popup-connect-site" class="input__field input__field--madoka">
+                <label for="popup-connect-site" class="input__label input__label--madoka">
+                  <svg width="100%" height="100%" viewBox="0 0 404 77" preserveAspectRatio="none" class="graphic graphic--madoka">
+                    <path d="m0,0l404,0l0,77l-404,0l0,-77z"></path>
+                  </svg><span class="input__label-content input__label-content--madoka">Ваш сайт</span>
+                </label></span></div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <textarea name="comment" placeholder="Комментарий" class="popup__textarea"></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="popup__time">
+                <input type="text" name="time" placeholder="Когда с вами связаться?" class="time-mask"><i class="icon icon-time"></i>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <input type="submit" value="Отправить заявку" class="button popup__submit fl-right">
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- -------------- Форма обратного звонка ---------------->
+      <div id="popupCallback" class="popup">
+        <form action="" class="popup__form">
+          <div class="row">
+            <div class="col-md-12">
+              <p class="popup__header">Обратный звонок</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6"><span class="input input--madoka">
+                <input id="popup-callback-name" class="input__field input__field--madoka">
+                <label for="popup-callback-name" class="input__label input__label--madoka">
+                  <svg width="100%" height="100%" viewBox="0 0 404 77" preserveAspectRatio="none" class="graphic graphic--madoka">
+                    <path d="m0,0l404,0l0,77l-404,0l0,-77z"></path>
+                  </svg><span class="input__label-content input__label-content--madoka">Ваше имя</span>
+                </label></span></div>
+            <div class="col-md-6"><span class="input input--madoka">
+                <input id="popup-callback-phone" class="input__field input__field--madoka phone-mask">
+                <label for="popup-callback-phone" class="input__label input__label--madoka">
+                  <svg width="100%" height="100%" viewBox="0 0 404 77" preserveAspectRatio="none" class="graphic graphic--madoka">
+                    <path d="m0,0l404,0l0,77l-404,0l0,-77z"></path>
+                  </svg><span class="input__label-content input__label-content--madoka">Телефон</span>
+                </label></span></div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="popup__time">
+                <input type="text" name="time" placeholder="Когда с вами связаться?" class="time-mask"><i class="icon icon-time"></i>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <input type="submit" value="Отправить заявку" class="button popup__submit fl-right">
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- -------------- Форма регистрации ---------------->
+      <div id="popupRegister" class="popup">
+        <form action="" class="popup__form">
+          <div class="row">
+            <div class="col-md-12">
+              <p class="popup__header">Регистрация</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6"><span class="input input--madoka">
+                <input id="popup-register-name" class="input__field input__field--madoka">
+                <label for="popup-register-name" class="input__label input__label--madoka">
+                  <svg width="100%" height="100%" viewBox="0 0 404 77" preserveAspectRatio="none" class="graphic graphic--madoka">
+                    <path d="m0,0l404,0l0,77l-404,0l0,-77z"></path>
+                  </svg><span class="input__label-content input__label-content--madoka">Ваше имя</span>
+                </label></span><span class="input input--madoka">
+                <input id="popup-register-mail" class="input__field input__field--madoka">
+                <label for="popup-register-mail" class="input__label input__label--madoka">
+                  <svg width="100%" height="100%" viewBox="0 0 404 77" preserveAspectRatio="none" class="graphic graphic--madoka">
+                    <path d="m0,0l404,0l0,77l-404,0l0,-77z"></path>
+                  </svg><span class="input__label-content input__label-content--madoka">Email</span>
+                </label></span></div>
+            <div class="col-md-6"><span class="input input--madoka">
+                <input id="popup-register-login" class="input__field input__field--madoka">
+                <label for="popup-register-login" class="input__label input__label--madoka">
+                  <svg width="100%" height="100%" viewBox="0 0 404 77" preserveAspectRatio="none" class="graphic graphic--madoka">
+                    <path d="m0,0l404,0l0,77l-404,0l0,-77z"></path>
+                  </svg><span class="input__label-content input__label-content--madoka">Логин</span>
+                </label></span><span class="input input--madoka">
+                <input id="popup-register-phone" class="input__field input__field--madoka">
+                <label for="popup-register-phone" class="input__label input__label--madoka">
+                  <svg width="100%" height="100%" viewBox="0 0 404 77" preserveAspectRatio="none" class="graphic graphic--madoka">
+                    <path d="m0,0l404,0l0,77l-404,0l0,-77z"></path>
+                  </svg><span class="input__label-content input__label-content--madoka">Телефон</span>
+                </label></span></div>
+          </div>
+          <div class="row">
+            <div class="col-md-6"><span class="input input--madoka">
+                <input id="popup-register-pas" type="password" class="input__field input__field--madoka">
+                <label for="popup-register-pas" class="input__label input__label--madoka">
+                  <svg width="100%" height="100%" viewBox="0 0 404 77" preserveAspectRatio="none" class="graphic graphic--madoka">
+                    <path d="m0,0l404,0l0,77l-404,0l0,-77z"></path>
+                  </svg><span class="input__label-content input__label-content--madoka">Пароль</span>
+                </label></span></div>
+            <div class="col-md-6"><span class="input input--madoka">
+                <input id="popup-register-pas2" type="password" class="input__field input__field--madoka">
+                <label for="popup-register-pas2" class="input__label input__label--madoka">
+                  <svg width="100%" height="100%" viewBox="0 0 404 77" preserveAspectRatio="none" class="graphic graphic--madoka">
+                    <path d="m0,0l404,0l0,77l-404,0l0,-77z"></path>
+                  </svg><span class="input__label-content input__label-content--madoka">Повторите пароль</span>
+                </label></span></div>
+          </div>
+          <div class="row">
+            <div class="col-md-6"><span class="input input--madoka">
+                <input id="popup-register-promo" class="input__field input__field--madoka">
+                <label for="popup-register-promo" class="input__label input__label--madoka">
+                  <svg width="100%" height="100%" viewBox="0 0 404 77" preserveAspectRatio="none" class="graphic graphic--madoka">
+                    <path d="m0,0l404,0l0,77l-404,0l0,-77z"></path>
+                  </svg><span class="input__label-content input__label-content--madoka">Промокод</span>
+                </label></span></div>
+            <div class="col-md-6">
+              <input type="submit" value="Отправить заявку" class="button popup__submit fl-right">
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- -------------- Форма входа ---------------->
+      <div id="popupLogin" class="popup">
+        <form action="" class="popup__form">
+          <div class="row">
+            <div class="col-md-12">
+              <p class="popup__header">Вход</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6"><span class="input input--madoka">
+                <input id="popup-login-login" class="input__field input__field--madoka">
+                <label for="popup-login-login" class="input__label input__label--madoka">
+                  <svg width="100%" height="100%" viewBox="0 0 404 77" preserveAspectRatio="none" class="graphic graphic--madoka">
+                    <path d="m0,0l404,0l0,77l-404,0l0,-77z"></path>
+                  </svg><span class="input__label-content input__label-content--madoka">Логин</span>
+                </label></span></div>
+            <div class="col-md-6"><span class="input input--madoka">
+                <input id="popup-login-pas" type="password" class="input__field input__field--madoka">
+                <label for="popup-login-pas" class="input__label input__label--madoka">
+                  <svg width="100%" height="100%" viewBox="0 0 404 77" preserveAspectRatio="none" class="graphic graphic--madoka">
+                    <path d="m0,0l404,0l0,77l-404,0l0,-77z"></path>
+                  </svg><span class="input__label-content input__label-content--madoka">Пароль</span>
+                </label></span></div>
+          </div>
+          <div class="row">
+            <div class="col-md-6"><span class="input input--madoka">
+                <input id="popup-login-pas2" class="input__field input__field--madoka">
+                <label for="popup-login-pas2" class="input__label input__label--madoka">
+                  <svg width="100%" height="100%" viewBox="0 0 404 77" preserveAspectRatio="none" class="graphic graphic--madoka">
+                    <path d="m0,0l404,0l0,77l-404,0l0,-77z"></path>
+                  </svg><span class="input__label-content input__label-content--madoka">Повторите пароль</span>
+                </label></span></div>
+            <div class="col-md-6">
+              <input type="submit" value="Отправить заявку" class="button popup__submit fl-right">
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- -------------- popup end ---------------->
+    </div>
+    <!--scripts =================================================-->
+    <script>window.jQuery || document.write('<script src="libs/jquery.min.js"><\/script>')</script><script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="libs/owl/owl.carousel.min.js"></script>
+    <script src="libs/fancybox/jquery.fancybox.pack.js"></script>
+    <script src="libs/jquery.inputmask.bundle.js"></script>
+    <script src="libs/ui-slider/jquery-ui.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

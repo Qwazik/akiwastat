@@ -1,0 +1,41 @@
+extends template
+
+block main
+	.breadcumbs
+		.container
+			ul.breadcumbs__list
+				li.breadcumbs__item: a.breadcumbs__link(href="#") Главная
+				li.breadcumbs__item: a.breadcumbs__link(href="#") Блог
+				li.breadcumbs__item: a.breadcumbs__link(href="#") Технологии распознавания речи: научный эксперимент или реальная прибыль для бизнеса?
+	.inner-header
+		.container
+			.row
+				.col-md-7.fl-left
+					h2 Партнерская программа
+				.col-md-5.fl-right
+					include includes/smallslider
+	.inner-partners
+		.container
+			.inner-partners__top
+				.inner-partners__left <span>У нас действует</span> <span><b>накопительная система</b></span> для наших партнеров
+				.inner-partners__right
+					i.icon.icon-plus-person-big
+					a(href="#") Как стать партнером Akiwastat
+			.inner-partners__bottom
+				span Укажите ваш месячный доход
+				.partners-slider#partnersSlider
+					.partners-slider__body
+						.partners-slider__indicator
+						.points
+							.partners-slider__point.active: span от 100 т. руб.
+							.partners-slider__point: span от 300 т. руб.
+							.partners-slider__point: span от 600 т. руб.
+							.partners-slider__point: span от 900 т. руб.
+				.partners-slider__discount
+					span Ваша скидка:
+					span.partners-slider__discount--value#discountValue 10%
+
+
+	
+
+

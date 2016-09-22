@@ -1,0 +1,136 @@
+extends template
+
+block main
+	// -------------- слайдер --------------
+	.page__slider.slider
+		.slider__content-wrap.container
+			.slider__content.slider-content.animated.fadeIn
+				#carousel-custom-dots.vertical
+				strong.slider-content__header Веб-аналитика от AkiwaStat
+				p.slider-content__desc Только в августе для клиентов из Москвы и Санкт-Петербурга мы предлагаем Call Traking по супер цене!
+				.slider-content__price-block
+					i.icon.icon-price-left 
+					span.slider-content__price  
+						| &nbsp;4500 
+						img(style="vertical-align: 0px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAABJCAYAAACkYd+RAAADZElEQVRoQ+2aX4hVVRSHvx+WSGIkWQOiUyRkCGEPkUwQgZgh+VKBFvhgRAg+KWgRiJChD81TESXiQxH4NMxDiIU4FCiiSCijgqRBDowoJdM0ak1Os2LBuXDYnjuz91y9d4dnwX04+6yzz7d/e+1/61wRmJl1A5fD8hau/wTGgJ+B88AP/pM0klqn2gBbxTQOfAt8JulYLHSnYMt8A8BWSWeng84B1hlvA3uAjyX92ww6F9gG32FgvaQ/qoBjYYckPTFdN1XdN7PZwELgWWAlsK64blbdaeBVSb+FDvcctmIAzwJeBz4CljUhPukNk3SrfL/tsI2Xm9mDwIfATsAbEFq/pDezgC1BrwL6gXkVwJslfdko75iyZTAz6wGOAA8FwDeAZyQNe3kWsA5iZm8AfRVMX0vamBVsAbwX2BSoOwEskTSUjbIF7HzgIvBoANwr6f2sYAvgHb6SBbAes905wj4GOJxPbWXryQ62UPcQsCaA/SBX2G1AbwDblyvsy8CPAexgrrCLgaEA9vdcYR8GRgPY8Vxh5wK+1JZtIlfYx4FrAexIrrC+sTkewF7IFfY9YF8AezBX2APA2wHs7uxgzWxOEa8+I5RtdY6w7wL7A1DP6nRlBVucy84BTwewX0l6JzfY7cAnAahfviDpVDawZrYcOAF4zJZtQJIfKvM4g5mZJ0E8V7AoAPVU0vOSzmQBW6RYPW20tKL7P5W0pVHe0TAwM+9en1P9dBDaILBC0t8dhTWzJ4FdwIaqUAQ8z/WipEvlFrRNWTNbUCTm3gLWVpyxGlyeEX9F0k+h1LGw3hXRGerSSx4o0kI+cLoqujos8g33a5J8rr3DYmEj3tOyy/ceFpKuN6spB1iPTz8gfiPJpmpyJ2G9yz8HvpB0M6Zf2gn7V/FpyU+t3/npVdJkDGTq1HW1GMEpdTd8/wH8G8FwKtxMZ4MZf1OYSetaHWA1bKrqsQOsVjZZWTN7KnjI95ZHg7IrwEuplQf+k5J+baUOmdmUq0YrlQfPjkp6pJX6atgm6t1/yv4SKOF7UP/rSdn8W1SY3E0NvzFJz6U+VPav59lW1Lsb+9l6BUvtgTpmUxWL9a+VjVUq1a9WNlWxWP9a2VilUv1qZVMVi/WvlY1VKtWvVjZVsVj/WtlYpVL9/lfK/gfOhiaRoxu1HQAAAABJRU5ErkJggg==", alt="")
+					span.slider-content__price-period в месяц
+				.slider-content__footer
+					a(href="#popupRegister").fancybox.slider-content__button.button 
+						i.icon.icon-plus-person
+						span Зарегистрироваться сейчас
+					.slider-content__promo * При регистрации укажите промо код: <b class="white">093241</b>
+		.slider__list#jsMainSlider
+			.slider__item(style="background-image: url('img/slide1.jpg');", alt="").slider__image
+			.slider__item(style="background-image: url('img/slide1.jpg');", alt="").slider__image
+			.slider__item(style="background-image: url('img/slide1.jpg');", alt="").slider__image
+			
+	// -------------- слайдер конец --------------
+	// -------------- calltracking --------------
+	.page__calltracking
+		.container
+			.calltracking.color-white
+				.calltracking__main 
+					span.tooltip-wrap(class="green-text") Динамический
+						.tooltip
+							p Отслеживайте рекламный источник с точностью до поисковой фразы. Анализируйте контекстную рекламу до реального запроса пользователя. Убедитесь сами, как легко теперь оценить эффективность каждой рекламной площадки.
+							p Подменяйте и показывайте определенный номер каждому из уникальных посетителей Вашего сайта! Так, количество необходимых номеров равно среднему количеству посетителей, которые одновременно пребывают на сайте.
+					| и 
+					span.tooltip-wrap(class="green-text") статический
+						.tooltip
+							p Отслеживайте рекламный источник с точностью до поисковой фразы. Анализируйте контекстную рекламу до реального запроса пользователя. Убедитесь сами, как легко теперь оценить эффективность каждой рекламной площадки.
+							p Подменяйте и показывайте определенный номер каждому из уникальных посетителей Вашего сайта! Так, количество необходимых номеров равно среднему количеству посетителей, которые одновременно пребывают на сайте.
+					| Call Tracking <span class="block">в более чем 90 регионах РФ</span>
+
+				.calltracking__desc 
+					|Система Call tracking (Колтрекинг) – это Ваш мощный инструмент учета конверсий (лидов), поступающих с разных источников – контекстной рекламы, поисковых систем и любых видов оффлайн-рекламы.
+					a(href="#").button.yellow-button Подробнее о CALL TRACKIING
+	// -------------- calltracking end --------------
+	// -------------- steps --------------
+	.page__steps
+		.container
+			.row
+				.col-lg-5.col-md-3
+				.col-lg-7.col-md-9
+					h2 Сервис AkiwaStat
+						span очень просто использовать
+					.steps
+						.steps__body
+							.steps__item.active
+								.steps__num 1
+								a(href="#").steps__link Регистрация
+							.steps__item
+								.steps__num 2
+								a(href="#").steps__link Добавление сайта в систему
+							.steps__item 
+								.steps__num 3
+								a(href="#").steps__link Установка кода на сайт
+						.steps__footer
+							i.icon.icon-galka
+							span 1 код = 3 сервиса
+	// -------------- steps end --------------
+	// -------------- features --------------
+	.page__features
+		
+		.container
+			h2 Приемущества
+			span.desc Мы продолжаем неустанно работать над разработкой и усовершенствованием сервисов для того, чтобы вы могли оценить наши старания.
+			.row
+				.col-lg-4.col-md-5.col-sm-6.features__left-side
+					.features__item.clearfix
+						.features__left
+							.features__name Пробный период и демо-доступ к сервисам
+							.features__desc Пробный период к Call back, генератору лидов. Демо-доступ к Call tracking
+						.features__image
+							i.icon.icon-features1
+					.features__item.clearfix
+						.features__left
+							.features__name Интеграция со сторонними сервисами
+							.features__desc СRM-системы, аmoСRM, Bitrix24, платформа K50
+						.features__image
+							i.icon.icon-features2
+					.features__item.clearfix
+						.features__left
+							.features__name Понятное ценообразование и прозрачная стоимость
+							.features__desc Цена в зависимости от региона работы и от количества посетителей в день
+						.features__image
+							i.icon.icon-features3
+				.col-lg-4.col-md-2
+				.col-lg-4.col-md-5.col-sm-6.features__right-side
+					.features__item.clearfix
+						.features__image
+							i.icon.icon-features4
+						.features__left
+							.features__name Пробный период и демо-доступ к сервисам
+							.features__desc Пробный период к Call back, генератору лидов. Демо-доступ к Call tracking
+						
+					.features__item.clearfix
+						.features__image
+							i.icon.icon-features5
+						.features__left
+							.features__name Интеграция со сторонними сервисами
+							.features__desc СRM-системы, аmoСRM, Bitrix24, платформа K50
+						
+					.features__item.clearfix
+						.features__image
+							i.icon.icon-features6
+						.features__left
+							.features__name Понятное ценообразование и прозрачная стоимость
+							.features__desc Цена в зависимости от региона работы и от количества посетителей в день
+						
+	// -------------- features end --------------
+	// -------------- clients --------------
+	.page__clients
+		.container
+			h2 Клиенты
+			.clients
+				.row
+					.col-lg-3.col-md-4.col-sm-6.clients__item-wrap: .clients__item: img(src="img/clients1.png", alt="")
+					.col-lg-3.col-md-4.col-sm-6.clients__item-wrap: .clients__item: img(src="img/clients2.png", alt="")
+					.col-lg-3.col-md-4.col-sm-6.clients__item-wrap: .clients__item: img(src="img/clients3.png", alt="")
+					.col-lg-3.col-md-4.col-sm-6.clients__item-wrap: .clients__item: img(src="img/clients4.png", alt="")
+					.col-lg-3.col-md-4.col-sm-6.clients__item-wrap: .clients__item: img(src="img/clients5.png", alt="")
+					.col-lg-3.col-md-4.col-sm-6.clients__item-wrap: .clients__item: img(src="img/clients6.png", alt="")
+					.col-lg-3.col-md-4.col-sm-6.clients__item-wrap: .clients__item: img(src="img/clients7.png", alt="")
+					.col-lg-3.col-md-4.col-sm-6.clients__item-wrap: .clients__item: img(src="img/clients8.png", alt="")
+	// -------------- clients end --------------
+	

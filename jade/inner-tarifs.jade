@@ -1,0 +1,216 @@
+extends template
+
+block main
+	.breadcumbs
+		.container
+			ul.breadcumbs__list
+				li.breadcumbs__item: a.breadcumbs__link(href="#") Главная
+				li.breadcumbs__item: a.breadcumbs__link(href="#") Блог
+				li.breadcumbs__item: a.breadcumbs__link(href="#") Технологии распознавания речи: научный эксперимент или реальная прибыль для бизнеса?
+	.inner-header
+		.container
+			.row
+				.col-md-7.fl-left
+					h2 Тарифы
+				.col-md-5.fl-right
+					include includes/smallslider
+	.inner-tarifs
+		.tarifs-decorate
+		.container
+			.row
+				.col-md-4
+					.inner-tarifs__item.v-kurse
+						.inner-tarifs__mask
+						.inner-tarifs__text
+							.inner-tarifs__name
+								| Тарифный план
+								span «Будь в курсе»
+							.inner-tarifs__price-block
+								i.icon.icon-price-left-md
+								span.inner-tarifs__price
+									| &nbsp;4500
+									img(style="vertical-align: 0px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAA2CAYAAACm9ZtyAAACWElEQVRYR+2YTYhOURjHf38iCslCVr5WLCxsrIhSJruRbIwVSj6ysDIbZTe+Sso0ZdRkYUVkQylNxoKFkiQ20pSPjc/QYPTo0XmnM7d533PfvPe8m/usTvc+5zy/+z/nPOc5V0RmZgeBwfhZG+2vwHvgGXAPuCHpbaq/OghQjPUHuA6clPS8GUiVAI2Yk8AZ4IQkb0+zFMAjYDwlIzALWAKsBlY08b8P9Er6FL9PAfRJuloCYMrFzFYCfcBRYGmh7xNgi6QvjecdB2gMbGYLg/QHChB3ge2SfI1QGUAEcgQ4D8yOQI5LOpUFwIOY2THgXATwA1grabxyBQKAx/EtuSOCGJR0OAtAgFgFvATmBAhXYVk2gAAxDOyLVNidG2AzMBoBXM4NMBf4DMwPEI+zAoRpeAqsCwAfugEwBmwMAJPdBpjoBsArwLek27usAGa2CPgYpeWx3AA7gWvRNjybG+AO0BMB9GQDMLNNgBclDfN6cXkWADPzBPQQWB8B9EsaqBzAzDzGpcIZ8AZYI+lbpQBmNg+4AuyKvtxCbXir0oLEzDYAQwXZPeaApP4GUMcUCFJ7Rewn3h5ga7HkA0aAvZJchX+WAvgO/Irka9VcEBUbRT8PeBrwhTcVvAxAydgt3V4DhyTdnskrpcD/ALwALgLDkiaaDZQC8IumXzjL2E/Ak4v3GZXk537SUgBt34ySEQsONUD3FTCzOE1uA/ZH03QBeNDmvN6U9LtsH5nZtMRQtmMLv8Xx9Ts1Xg3gCnR3DcRzNMNvujoR1QrUCtQK1ArUCtQKVK7AX38YmkqjcC9HAAAAAElFTkSuQmCC", alt="")
+								span.slider-content__price-period в месяц
+							.inner-tarifs__calltracking
+								i.icon.icon-calltracking-static-md 
+								span Статический Call Tracking
+						.inner-tarifs__button.button + Подключить
+				.col-md-4
+					.inner-tarifs__item.dinamic.biznes
+						.inner-tarifs__mask
+						.inner-tarifs__text
+							.inner-tarifs__name
+								| Тарифный план
+								span «Бизнес»
+							.inner-tarifs__price-block
+								i.icon.icon-price-left-md
+								span.inner-tarifs__price
+									| &nbsp;8900 
+									img(style="vertical-align: 0px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAA2CAYAAACm9ZtyAAACWElEQVRYR+2YTYhOURjHf38iCslCVr5WLCxsrIhSJruRbIwVSj6ysDIbZTe+Sso0ZdRkYUVkQylNxoKFkiQ20pSPjc/QYPTo0XmnM7d533PfvPe8m/usTvc+5zy/+z/nPOc5V0RmZgeBwfhZG+2vwHvgGXAPuCHpbaq/OghQjPUHuA6clPS8GUiVAI2Yk8AZ4IQkb0+zFMAjYDwlIzALWAKsBlY08b8P9Er6FL9PAfRJuloCYMrFzFYCfcBRYGmh7xNgi6QvjecdB2gMbGYLg/QHChB3ge2SfI1QGUAEcgQ4D8yOQI5LOpUFwIOY2THgXATwA1grabxyBQKAx/EtuSOCGJR0OAtAgFgFvATmBAhXYVk2gAAxDOyLVNidG2AzMBoBXM4NMBf4DMwPEI+zAoRpeAqsCwAfugEwBmwMAJPdBpjoBsArwLek27usAGa2CPgYpeWx3AA7gWvRNjybG+AO0BMB9GQDMLNNgBclDfN6cXkWADPzBPQQWB8B9EsaqBzAzDzGpcIZ8AZYI+lbpQBmNg+4AuyKvtxCbXir0oLEzDYAQwXZPeaApP4GUMcUCFJ7Rewn3h5ga7HkA0aAvZJchX+WAvgO/Irka9VcEBUbRT8PeBrwhTcVvAxAydgt3V4DhyTdnskrpcD/ALwALgLDkiaaDZQC8IumXzjL2E/Ak4v3GZXk537SUgBt34ySEQsONUD3FTCzOE1uA/ZH03QBeNDmvN6U9LtsH5nZtMRQtmMLv8Xx9Ts1Xg3gCnR3DcRzNMNvujoR1QrUCtQK1ArUCtQKVK7AX38YmkqjcC9HAAAAAElFTkSuQmCC", alt="")
+								span.slider-content__price-period в месяц
+							.inner-tarifs__calltracking
+								i.icon.icon-calltracking-dinamic-md 
+								span Динамический Call Tracking
+						.inner-tarifs__button.button + Подключить
+				.col-md-4
+					.inner-tarifs__item.corp
+						.inner-tarifs__mask
+						.inner-tarifs__text
+							.inner-tarifs__name
+								| Тарифный план
+								span «Корпорация»
+							.inner-tarifs__price-block
+								i.icon.icon-price-left-md
+								span.inner-tarifs__price
+									| &nbsp;15000
+									img(style="vertical-align: 0px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAA2CAYAAACm9ZtyAAACWElEQVRYR+2YTYhOURjHf38iCslCVr5WLCxsrIhSJruRbIwVSj6ysDIbZTe+Sso0ZdRkYUVkQylNxoKFkiQ20pSPjc/QYPTo0XmnM7d533PfvPe8m/usTvc+5zy/+z/nPOc5V0RmZgeBwfhZG+2vwHvgGXAPuCHpbaq/OghQjPUHuA6clPS8GUiVAI2Yk8AZ4IQkb0+zFMAjYDwlIzALWAKsBlY08b8P9Er6FL9PAfRJuloCYMrFzFYCfcBRYGmh7xNgi6QvjecdB2gMbGYLg/QHChB3ge2SfI1QGUAEcgQ4D8yOQI5LOpUFwIOY2THgXATwA1grabxyBQKAx/EtuSOCGJR0OAtAgFgFvATmBAhXYVk2gAAxDOyLVNidG2AzMBoBXM4NMBf4DMwPEI+zAoRpeAqsCwAfugEwBmwMAJPdBpjoBsArwLek27usAGa2CPgYpeWx3AA7gWvRNjybG+AO0BMB9GQDMLNNgBclDfN6cXkWADPzBPQQWB8B9EsaqBzAzDzGpcIZ8AZYI+lbpQBmNg+4AuyKvtxCbXir0oLEzDYAQwXZPeaApP4GUMcUCFJ7Rewn3h5ga7HkA0aAvZJchX+WAvgO/Irka9VcEBUbRT8PeBrwhTcVvAxAydgt3V4DhyTdnskrpcD/ALwALgLDkiaaDZQC8IumXzjL2E/Ak4v3GZXk537SUgBt34ySEQsONUD3FTCzOE1uA/ZH03QBeNDmvN6U9LtsH5nZtMRQtmMLv8Xx9Ts1Xg3gCnR3DcRzNMNvujoR1QrUCtQK1ArUCtQKVK7AX38YmkqjcC9HAAAAAElFTkSuQmCC", alt="")
+								span.slider-content__price-period в месяц
+							.inner-tarifs__calltracking
+								i.icon.icon-calltracking-dinamic-md 
+								span Статический Call Tracking
+						.inner-tarifs__button.button + Подключить
+			.inner-tarifs__no
+					.row
+						.col-md-8
+							span Нет нужного тарифа?
+							| Мы готовы разработать тариф специально для Вас!
+						.col-md-4
+							a(href="#").button.yellow-button.fl-right Запросить свой тариф
+	.tarifs-calc
+		.tarifs-calc__item.tarifs-calc__item--dinamic
+			form(action="").dinamic-form
+				.container
+					.tarifs-calc__header
+						h2 Рассчитать динамический Call Tracking
+						p Вы можете рассчитать стоимость отслеживания как всего трафика вашего сайта, так и любого сегмента. Укажите данные по сегменту, звонки с которого вы хотите проанализировать.
+					.row.tarifs-calc__row
+						.col-md-3.tarifs-calc__left
+							p Регион
+						.col-md-9.tarifs-calc__right
+							label.tarifs-calc__region-label
+								input(type="checkbox")
+								.tarifs-calc__region 
+									| Москва 499, Санкт-Петербург 812
+							label.tarifs-calc__region-label
+								input(type="checkbox")
+								.tarifs-calc__region 
+									| Региональные номера или мобильные **
+							label.tarifs-calc__region-label
+								input(type="checkbox")
+								.tarifs-calc__region 
+									| Москва 495
+							label.tarifs-calc__region-label
+								input(type="checkbox")
+								.tarifs-calc__region 
+									| Номера в коде 804 или Казахстан
+							label.tarifs-calc__region-label
+								input(type="checkbox")
+								.tarifs-calc__region 
+									| Номера в коде 800
+							a(href="#").block Другие регионы
+					.row.tarifs-calc__row
+						.col-md-3.tarifs-calc__left
+							p 
+								|Колличество посещений на сайт с рекламных источников
+								i.icon.icon-info-green
+						.col-md-9.tarifs-calc__right
+							.tarifs-calc__slider
+								.slider-trafic.tarifs-calc__slider-item
+									.slider
+								span или
+								.input
+									input(type="text")
+					.row.tarifs-calc__row
+						.col-md-3.tarifs-calc__left
+							p 
+								|Длительность сеанса
+								i.icon.icon-info-green
+						.col-md-9.tarifs-calc__right
+							.tarifs-calc__slider
+								.slider-seans.tarifs-calc__slider-item
+									.slider
+								span или
+								.input
+									input(type="text")
+					.row.tarifs-calc__row
+						.col-md-3.tarifs-calc__left
+							p 
+								|Колличество статических номеров
+								i.icon.icon-info-green
+						.col-md-9.tarifs-calc__right
+							.tarifs-calc__slider
+								.slider-numbers.tarifs-calc__slider-item
+									.slider
+								span или
+								.input
+									input(type="text")
+					.tarifs-calc__sum.tarifs-calc__sum--dinamic
+						.row
+							.col-sm-2
+									img(src="img/dinamic-sum.png", alt="").img-responsive
+							.col-sm-5
+								.tarifs-calc__finally-price
+									span Итоговая цена
+									.price 
+										| 4500 
+										img(src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAvCAYAAAASP7HuAAACn0lEQVRYR+2Xv4sTURDHv7O7BLLZt2fsBEHQq67xDixshBPUs/A6bRQE/Q9EkdNCtLJQDmysr/BH6SGKQcFKLETlxCsMVsohhxHUnRcQzWbkhU1YQ5JdcZ9FyFR5L7PzeTNv3sx7hJQopdYAqPTciN8C4BuATSJaE5FHzPwcgJkfKNQHMx9P5YQNUqsDuMDM9wb9WTSswxCRJyJystlsbqahQ2FEdCaO4/VhXnqe58RxXCWiXQCOANgLIG3vAxEdjKLofdfGKM/2MfOzvCENgmAGwDIRLXS/EZGPAPZorRtmrjBYF6CUOgvgWte2iDzWWh820S0cZqBKqSUAV3vhIzoeRdFdKzDjVRAENSI6lADrzDxjC4ZKpTLrOM7rVDjnrcGScD4FsD/xbtk27FySLIb3wiosDMMFEaklnn2xCvN9f851XbNvRmKrsEqlsttxHFPcjfywClNKLQK4n8A2bMOuAzAVxUjNJsxRSpmWM53ALlqDhWF4QkRuJSBxHGfaCqxarU61Wq03AHYksAfMvGgDVgrD8KGIHEhALRGZ01qvFwrzfX+b67p3AMynetplrfWVwvpZuVze7rruKSI6DyBINdxVZj5qDnQWzJyPP+4QfV3bRGUrEe0Ukdn+Riwit7XWpwH87PW1tAGl1L/erow5FpElrfXNvsWNvBb062aNPwFYEZEbWuvPg5SHJogJAxFtZBC+Ami02+1XzWbzLYD2KP1CszHL9TGGBUFwLOX+ChH5ZiwilwC8ywwN0S9mXs3S65wzpdTQV0ceAwC+M/OWPLr/HfYytSpTCdxkbHqRzrFizcy9WjhJffMgSNfGv3oy5Qh38U+myZ5N9ixP4g3UGeMWM+LCM0aH2rzwPc/rVP1SqVRvNBp5qn7uhPkNSLSCcppLpUIAAAAASUVORK5CYII=", alt="")
+										span.star *
+
+									span.last в месяц
+							.col-sm-5
+								input(type="submit" value="+ Подключиться").button
+						hr
+						.row.sum
+							.col-sm-2
+							.col-sm-10
+								.sum-dinamic__bottom
+									span Первоначальный взнос: <b>0 руб.</b>
+									.sum-dinamic__desc-head
+										span.star *
+										span Цена состоит из:
+									ul.sum-dinamic__desc
+										li Цена за ПО: <b>3 900 &#8381;</b>
+										li Цена за связь: <b>1 000 &#8381; </b>
+		hr
+		.tarifs-calc__item.tarifs-calc__item
+				form(action="")
+					.container
+						.tarifs-calc__header
+							h2 Рассчитать динамический Call Tracking
+							p Вы можете рассчитать стоимость отслеживания как всего трафика вашего сайта, так и любого сегмента. Укажите данные по сегменту, звонки с которого вы хотите проанализировать.
+						.tarifs-calc__sum.tarifs-calc__sum
+							.row.tarifs-calc__row
+								.col-md-2.tarifs-calc__left
+									p 
+										|Колличество отслеживаемых источников
+										i.icon.icon-info-green
+								.col-md-10.tarifs-calc__right
+									.tarifs-calc__slider
+										.slider-static.tarifs-calc__slider-item
+											.slider
+										span или
+										.input
+											input(type="text")
+							hr
+							.row.sum
+								.col-sm-2
+								.col-sm-5
+									.tarifs-calc__finally-price
+										span Итоговая цена
+										.price 
+											| 4500 
+											img(src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAvCAYAAAASP7HuAAACn0lEQVRYR+2Xv4sTURDHv7O7BLLZt2fsBEHQq67xDixshBPUs/A6bRQE/Q9EkdNCtLJQDmysr/BH6SGKQcFKLETlxCsMVsohhxHUnRcQzWbkhU1YQ5JdcZ9FyFR5L7PzeTNv3sx7hJQopdYAqPTciN8C4BuATSJaE5FHzPwcgJkfKNQHMx9P5YQNUqsDuMDM9wb9WTSswxCRJyJystlsbqahQ2FEdCaO4/VhXnqe58RxXCWiXQCOANgLIG3vAxEdjKLofdfGKM/2MfOzvCENgmAGwDIRLXS/EZGPAPZorRtmrjBYF6CUOgvgWte2iDzWWh820S0cZqBKqSUAV3vhIzoeRdFdKzDjVRAENSI6lADrzDxjC4ZKpTLrOM7rVDjnrcGScD4FsD/xbtk27FySLIb3wiosDMMFEaklnn2xCvN9f851XbNvRmKrsEqlsttxHFPcjfywClNKLQK4n8A2bMOuAzAVxUjNJsxRSpmWM53ALlqDhWF4QkRuJSBxHGfaCqxarU61Wq03AHYksAfMvGgDVgrD8KGIHEhALRGZ01qvFwrzfX+b67p3AMynetplrfWVwvpZuVze7rruKSI6DyBINdxVZj5qDnQWzJyPP+4QfV3bRGUrEe0Ukdn+Riwit7XWpwH87PW1tAGl1L/erow5FpElrfXNvsWNvBb062aNPwFYEZEbWuvPg5SHJogJAxFtZBC+Ami02+1XzWbzLYD2KP1CszHL9TGGBUFwLOX+ChH5ZiwilwC8ywwN0S9mXs3S65wzpdTQV0ceAwC+M/OWPLr/HfYytSpTCdxkbHqRzrFizcy9WjhJffMgSNfGv3oy5Qh38U+myZ5N9ixP4g3UGeMWM+LCM0aH2rzwPc/rVP1SqVRvNBp5qn7uhPkNSLSCcppLpUIAAAAASUVORK5CYII=", alt="")
+											span.star *
+
+										span.last в месяц
+								.col-sm-5
+									input(type="submit" value="+ Подключиться").button
+
+										
+
+
+
+
+
+
+
